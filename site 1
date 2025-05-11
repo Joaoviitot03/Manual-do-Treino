@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="pt-br">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -89,3 +90,52 @@
   <header>
     <h1>Manual do Treino</h1>
     <div class="subtitulo">Ganhe +150 receitas saudáveis como brinde exclusivo!</div>
+    <p class="descricao">
+      Aprenda como treinar de forma prática em casa e acelerar seus resultados com alimentação inteligente. Tudo em um único material acessível.
+    </p>
+  </header>
+
+  <div class="contador">
+    Oferta especial por tempo limitado: <span id="timer"></span>
+  </div>
+
+  <div class="preco">
+    <div class="preco-original">De R$129,90</div>
+    <div class="preco-promocional">Por apenas R$26,90 ou 2x de R$13,45</div>
+    <div>Valor promocional exclusivo de lançamento</div>
+  </div>
+
+  <a href=\"https://pay.kiwify.com.br/vDrTEgG\" class="botao-comprar">Quero garantir meu eBook + 150 receitas!</a>
+
+  <div class="depoimentos">
+    <div class="depoimento">"Muito mais do que esperava! As receitas são incríveis e os treinos fáceis de seguir." – Ana M.</div>
+    <div class="depoimento">"Melhor investimento que fiz pra minha saúde esse ano!" – Lucas P.</div>
+  </div>
+
+  <div class="garantia">
+    Satisfação garantida ou seu dinheiro de volta em até 7 dias!
+  </div>
+
+  <script>
+    // Contador regressivo de 24h
+    const timerElement = document.getElementById("timer");
+    let countdownDate = new Date().getTime() + 24 * 60 * 60 * 1000;
+
+    const x = setInterval(() => {
+      let now = new Date().getTime();
+      let distance = countdownDate - now;
+
+      let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      timerElement.innerHTML = ${hours}h ${minutes}m ${seconds}s;
+
+      if (distance < 0) {
+        clearInterval(x);
+        timerElement.innerHTML = "Oferta encerrada";
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
