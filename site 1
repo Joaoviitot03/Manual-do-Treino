@@ -1,0 +1,91 @@
+<!DOCTYPE html><html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manual do Treino</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #000;
+      color: #fff;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: rgba(255, 0, 0, 0.1);
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #ff0000;
+    }
+    .subtitulo {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      color: #fff;
+    }
+    .descricao {
+      max-width: 600px;
+      margin: 1rem auto;
+      font-size: 1rem;
+      color: #ccc;
+      text-align: center;
+    }
+    .contador {
+      text-align: center;
+      font-size: 1.5rem;
+      margin: 2rem 0;
+      color: #ff0000;
+    }
+    .preco {
+      text-align: center;
+      margin: 1rem;
+    }
+    .preco-original {
+      text-decoration: line-through;
+      color: #888;
+    }
+    .preco-promocional {
+      font-size: 2rem;
+      color: #ff0000;
+      font-weight: bold;
+    }
+    .botao-comprar {
+      display: block;
+      width: 80%;
+      max-width: 300px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: #ff0000;
+      color: #fff;
+      border: none;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      text-align: center;
+    }
+    .depoimentos, .garantia {
+      max-width: 600px;
+      margin: 2rem auto;
+      text-align: center;
+    }
+    .depoimento {
+      font-style: italic;
+      margin-bottom: 1rem;
+      color: #ddd;
+    }
+    .garantia {
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 2rem; }
+      .preco-promocional { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Manual do Treino</h1>
+    <div class="subtitulo">Ganhe +150 receitas saudáveis como brinde exclusivo!</div>
